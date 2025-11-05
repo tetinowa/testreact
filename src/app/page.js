@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-[3830px] flex flex-col gap-[107px] bg-white">
+    <div className="h-[3830px] flex flex-col items-center gap-[107px] bg-white">
       <div className="flex items-center min-w-screen gap-10 flex-col bg-black font-sans dark:bg-white pt-16 pb-16 pl-4 pr-4 ">
         <div className="flex flex-col items-center w-[1280px] h-auto gap-4">
           <div className="w-[1065px] h-[72px] flex flex-col justify-center items-center">
@@ -59,7 +59,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="h-[474px] bg-[#F9FAFB] gap-2.5 flex   flex-col items-center justify-center">
+      <div className="w-full h-[474px] bg-[#F9FAFB] gap-2.5 flex   flex-col items-center justify-center">
         <div className="pt-10 pb-10 flex flex-col gap-12">
           <div className="gap-4 flex flex-col items-center justify-center">
             <h1 className="text-[#0A0A0A] text-[20px] font-medium text-center">
@@ -143,8 +143,332 @@ export default function Home() {
             Explore Properties
           </h1>
 
-          <div className="h-[92px]"></div>
+          <div className="h-9 flex gap-2">
+            <div className="rounded-full pt-2 pb-2 pl-6 pr-6 bg-[#FF6900] flex justify-center items-center text-white text-[14px] font-medium">
+              House
+            </div>
+            <div className="rounded-full pt-2 pb-2 pl-6 pr-6 flex justify-center items-center text-[14px] font-medium border border-[#0000001A] text-[#0A0A0A]">
+              Villa
+            </div>
+            <div className="rounded-full pt-2 pb-2 pl-6 pr-6 flex justify-center items-center text-[14px] font-medium border border-[#0000001A] text-[#0A0A0A]">
+              Apartment
+            </div>
+          </div>
         </div>
+
+        <div className="grid grid-cols-3 gap-7">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+            <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
+            <div className="flex flex-col gap-[11px] p-4">
+              <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
+              <p className="text-black font-normal text-[16px]">Piney Hills</p>
+
+              <div className="flex gap-1 w-[98.421875px] h-5">
+                <img src="/img/ico/bed.svg" alt="BedIcon" />
+                <p className="text-[#4A5565] font-normal text-[14px]">3 Beds</p>
+              </div>
+
+              <div className="flex w-[305px] h-4 gap-4">
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/bath.svg" alt="BathIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2 Bathroms
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-1 w-[98.421875px] h-5">
+                  <img src="/img/ico/area.svg" alt="AreaIcon" />
+                  <p className="text-[#4A5565] font-normal text-[14px]">
+                    2,150 sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button className="bg-[#FF6900] rounded-lg w-[140.3359375px] h-9 ">
+          <p className="text-white font-medium text-[14px]">
+            Load More Listings
+          </p>
+        </button>
+      </div>
+
+      <div className="w-full bg-[#F9FAFB] gap-10 flex flex-col items-center pt-10 pb-10">
+        <div className="gap-4 flex flex-col items-center justify-center">
+          <h1 className="text-[#0A0A0A] text-[20px] font-medium text-center">
+            Meet the People <br></br> Behind the Process
+          </h1>
+          <h2 className="text-[#4A5565] text-[16px] font-normal text-center">
+            Our streamlined process makes finding your dream home simple and
+            stress-free
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-4 justify-center items-center gap-6">
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
+            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+              <p className="text-black font-normal text-[16px]">Michael Chen</p>
+              <p className="text-[#4A5565] font-normal text-[16px]">
+                Senior Real Estate Agent
+              </p>
+              <p className="text-[#FF6900] font-normal text-[16px]">
+                24 properties<br></br>sold
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
+            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+              <p className="text-black font-normal text-[16px]">Michael Chen</p>
+              <p className="text-[#4A5565] font-normal text-[16px]">
+                Senior Real Estate Agent
+              </p>
+              <p className="text-[#FF6900] font-normal text-[16px]">
+                24 properties<br></br>sold
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
+            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+              <p className="text-black font-normal text-[16px]">Michael Chen</p>
+              <p className="text-[#4A5565] font-normal text-[16px]">
+                Senior Real Estate Agent
+              </p>
+              <p className="text-[#FF6900] font-normal text-[16px]">
+                24 properties<br></br>sold
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
+            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+              <p className="text-black font-normal text-[16px]">Michael Chen</p>
+              <p className="text-[#4A5565] font-normal text-[16px]">
+                Senior Real Estate Agent
+              </p>
+              <p className="text-[#FF6900] font-normal text-[16px]">
+                24 properties<br></br>sold
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button className="bg-[#FF6900] rounded-lg w-[140.3359375px] h-9 ">
+          <p className="text-white font-medium text-[14px]">Meet the Team</p>
+        </button>
+      </div>
+
+      <div className="flex justify-center items-center gap-8">
+        <div className="w-[333.6640625px] h-[152px] flex gap-4 flex-col items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-[#101828] flex justify-center items-center">
+            <img src="/img/ico/house.svg"></img>
+          </div>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Find your dream home for life
+          </h1>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Browse thousands of properties and find the perfect place
+          </h1>
+        </div>
+
+        <div className="w-[333.6640625px] h-[152px] flex gap-4 flex-col items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-[#101828] flex justify-center items-center">
+            <img src="/img/ico/house.svg"></img>
+          </div>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Find your dream home for life
+          </h1>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Browse thousands of properties and find the perfect place
+          </h1>
+        </div>
+
+        <div className="w-[333.6640625px] h-[152px] flex gap-4 flex-col items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-[#101828] flex justify-center items-center">
+            <img src="/img/ico/house.svg"></img>
+          </div>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Find your dream home for life
+          </h1>
+          <h1 className="text-[16px] text-black font-normal text-center">
+            Browse thousands of properties and find the perfect place
+          </h1>
+        </div>
+      </div>
+
+      <div className="bg-[#101828] flex flex-col gap-6 pt-10 pb-10 w-full items-center justify-center">
+        <h1 className="text-center text-[16px] font-normal text-white">
+          The Only Market Update<br></br>You'll Actually Want to Read
+        </h1>
+
+        <p className="text-center text-[16px] font-normal text-[#99A1AF]">
+          Get weekly insights on the real estate market, new listings, and
+          expert tips delivered to your inbox
+        </p>
+
+        <div className="flex gap-3 w-md h-[36px] items-center justify-center">
+          <div className="h-[36px] bg-white rounded-lg border border-[#00000000] pt-px pb-px pl-4 pr-4">
+            Enter your Email
+          </div>
+          <button className="bg-[#FF6900] rounded-lg w-[140.3359375px] h-9 ">
+            <p className="text-white font-medium text-[14px]">Meet the Team</p>
+          </button>
+        </div>
+      </div>
+
+      <div className="w-full h-[342px] bg-white pt-[49px] pl-4 pr-4 border flex justify-center items-center">
+        <div className="flex flex-col gap-8 w-7xl h-[245px]"></div>
       </div>
     </div>
   );
