@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import employeeCard from "./_component/employeeCard";
+
 export default function Home() {
   return (
     <div className=" flex flex-col items-center gap-[107px] bg-white">
@@ -351,53 +353,51 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-4 justify-center items-center gap-6">
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
             <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
             <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
-              <p className="text-black font-normal text-[16px]">Michael Chen</p>
+              <p className="text-black font-normal text-[16px]">aaa</p>
               <p className="text-[#4A5565] font-normal text-[16px]">
                 Senior Real Estate Agent
               </p>
-              <p className="text-[#FF6900] font-normal text-[16px]">
+              <p className="text-[#FF6900] font-normal text-[16px] text-center">
                 24 properties<br></br>sold
               </p>
             </div>
           </div>
 
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
             <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
             <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
               <p className="text-black font-normal text-[16px]">Michael Chen</p>
               <p className="text-[#4A5565] font-normal text-[16px]">
                 Senior Real Estate Agent
               </p>
-              <p className="text-[#FF6900] font-normal text-[16px]">
+              <p className="text-[#FF6900] font-normal text-[16px] text-center">
                 24 properties<br></br>sold
               </p>
             </div>
           </div>
-
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
             <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
             <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
               <p className="text-black font-normal text-[16px]">Michael Chen</p>
               <p className="text-[#4A5565] font-normal text-[16px]">
                 Senior Real Estate Agent
               </p>
-              <p className="text-[#FF6900] font-normal text-[16px]">
+              <p className="text-[#FF6900] font-normal text-[16px] text-center">
                 24 properties<br></br>sold
               </p>
             </div>
           </div>
-
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col gap-6 bg-white overflow-hidden">
+          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
             <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
             <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
               <p className="text-black font-normal text-[16px]">Michael Chen</p>
               <p className="text-[#4A5565] font-normal text-[16px]">
                 Senior Real Estate Agent
               </p>
-              <p className="text-[#FF6900] font-normal text-[16px]">
+              <p className="text-[#FF6900] font-normal text-[16px] text-center">
                 24 properties<br></br>sold
               </p>
             </div>
