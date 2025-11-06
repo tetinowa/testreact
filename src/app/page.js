@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-[3830px] flex flex-col items-center gap-[107px] bg-white">
+    <div className=" flex flex-col items-center gap-[107px] bg-white">
       <div className="flex items-center min-w-screen gap-10 flex-col bg-black font-sans dark:bg-white pt-16 pb-16 pl-4 pr-4 ">
-        <div className="flex flex-col items-center w-[1280px] h-auto gap-4">
+        <div className="flex flex-col items-center w-7xlto gap-4">
           <div className="w-[1065px] h-[72px] flex flex-col justify-center items-center">
-            <h1 className="text-24 text-black font-medium">Smart Tools</h1>
-            <h1 className="text-24 text-black font-normal">
+            <h1 className="text-[24px] text-black font-medium">Smart Tools</h1>
+            <h1 className="text-[24px] text-black font-normal">
               Real Experts, Easy Moves
             </h1>
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-3 gap-7">
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-px overflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-px overflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -215,7 +215,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-pxerflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -244,7 +244,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-px overflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-px overflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -302,7 +302,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-[1px] overflow-hidden">
+          <div className="w-[408px] rounded-[14px] border flex flex-col gap-6 bg-white p-px overflow-hidden">
             <div className="w-[406px] h-48 bg-[url(/img/house1.jpg)] bg-cover bg-center"></div>
             <div className="flex flex-col gap-[11px] p-4">
               <p className="text-[#FF6900] font-normal text-[16px]">$216,000</p>
@@ -457,8 +457,8 @@ export default function Home() {
           expert tips delivered to your inbox
         </p>
 
-        <div className="flex gap-3 w-md h-[36px] items-center justify-center">
-          <div className="h-[36px] bg-white rounded-lg border border-[#00000000] pt-px pb-px pl-4 pr-4">
+        <div className="flex gap-3 w-md h-9s-center justify-center">
+          <div className="h-9 bg-white rounded-lg border border-[#00000000] pt-px pb-px pl-4 pr-4">
             Enter your Email
           </div>
           <button className="bg-[#FF6900] rounded-lg w-[140.3359375px] h-9 ">
@@ -467,8 +467,52 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-[342px] bg-white pt-[49px] pl-4 pr-4 border flex justify-center items-center">
-        <div className="flex flex-col gap-8 w-7xl h-[245px]"></div>
+      <div className="w-full bg-white pt-[49px] pl-4 pr-4 border flex justify-center items-center">
+        <div className="flex flex-col gap-8 w-7xl">
+          <div className="grid grid-cols-4 gap-8 w-7xl h-40">
+            <div className="flex flex-col gap-4">
+              <h1 className="text-black text-[16px]">NEED HELP</h1>
+              <p className="text-[#4A5565] text-[16px]">Facebook</p>
+              <p className="text-[#4A5565] text-[16px]">Twitter</p>
+              <p className="text-[#4A5565] text-[16px]">Instagram</p>
+              <p className="text-[#4A5565] text-[16px]">LinkedIn</p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h1 className="text-black text-[16px]">COMPANY</h1>
+              <p className="text-[#4A5565] text-[16px]">Facebook</p>
+              <p className="text-[#4A5565] text-[16px]">Twitter</p>
+              <p className="text-[#4A5565] text-[16px]">Instagram</p>
+              <p className="text-[#4A5565] text-[16px]">LinkedIn</p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h1 className="text-black text-[16px]">QUICK LINKS</h1>
+              <p className="text-[#4A5565] text-[16px]">Facebook</p>
+              <p className="text-[#4A5565] text-[16px]">Twitter</p>
+              <p className="text-[#4A5565] text-[16px]">Instagram</p>
+              <p className="text-[#4A5565] text-[16px]">LinkedIn</p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h1 className="text-black text-[16px]">FOLLOW</h1>
+              <p className="text-[#4A5565] text-[16px]">Facebook</p>
+              <p className="text-[#4A5565] text-[16px]">Twitter</p>
+              <p className="text-[#4A5565] text-[16px]">Instagram</p>
+              <p className="text-[#4A5565] text-[16px]">LinkedIn</p>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center h-[53px] border-t">
+            <h1 className="text-[14px] text-[#4A5565]">
+              © 2024 Real Estate Co. All rights reserved.
+            </h1>
+            <div className="flex gap-4 h-5">
+              <p className="text-[14px] text-[#4A5565]">Privacy Policy</p>
+              <p className="text-[14px] text-[#4A5565]">Terms of Service</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
