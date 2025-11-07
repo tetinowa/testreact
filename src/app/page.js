@@ -2,6 +2,33 @@ import Image from "next/image";
 
 import employeeCard from "./_component/employeeCard";
 
+const Data = [
+  {
+    image: "/img/employees/michael.jpg",
+    name: "Michael Chen",
+    occup: "Senior Real Estate Agent",
+    propertiesSold: "24",
+  },
+  {
+    image: "/img/employees/david.jpg",
+    name: "David Martinez",
+    occup: "Property Specialist",
+    propertiesSold: "18",
+  },
+  {
+    image: "/img/employees/james.jpg",
+    name: "James Wilson",
+    occup: "Investment Advisor",
+    propertiesSold: "32",
+  },
+  {
+    image: "/img/employees/robert.jpg",
+    name: "Robert Thompson",
+    occup: "Luxury Home Expert",
+    propertiesSold: "28",
+  },
+];
+
 export default function Home() {
   return (
     <div className=" flex flex-col items-center gap-[107px] bg-white">
@@ -353,55 +380,36 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-4 justify-center items-center gap-6">
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
-            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
-            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
-              <p className="text-black font-normal text-[16px]">aaa</p>
-              <p className="text-[#4A5565] font-normal text-[16px]">
-                Senior Real Estate Agent
-              </p>
-              <p className="text-[#FF6900] font-normal text-[16px] text-center">
-                24 properties<br></br>sold
-              </p>
-            </div>
-          </div>
+          {Data.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="w-[302px]  relative h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden"
+              >
+                <div className="w-[300px] relative h-64">
+                  <Image
+                    src={item.image}
+                    sizes="w-[300px] h-64"
+                    alt={item.name || "Employee photo"}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
 
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
-            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
-            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
-              <p className="text-black font-normal text-[16px]">Michael Chen</p>
-              <p className="text-[#4A5565] font-normal text-[16px]">
-                Senior Real Estate Agent
-              </p>
-              <p className="text-[#FF6900] font-normal text-[16px] text-center">
-                24 properties<br></br>sold
-              </p>
-            </div>
-          </div>
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
-            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
-            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
-              <p className="text-black font-normal text-[16px]">Michael Chen</p>
-              <p className="text-[#4A5565] font-normal text-[16px]">
-                Senior Real Estate Agent
-              </p>
-              <p className="text-[#FF6900] font-normal text-[16px] text-center">
-                24 properties<br></br>sold
-              </p>
-            </div>
-          </div>
-          <div className="w-[302px] h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
-            <div className="w-[300px] h-64 bg-[url(/img/employees/michael.jpg)] bg-cover bg-center"></div>
-            <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
-              <p className="text-black font-normal text-[16px]">Michael Chen</p>
-              <p className="text-[#4A5565] font-normal text-[16px]">
-                Senior Real Estate Agent
-              </p>
-              <p className="text-[#FF6900] font-normal text-[16px] text-center">
-                24 properties<br></br>sold
-              </p>
-            </div>
-          </div>
+                <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+                  <p className="text-black font-normal text-[16px]">
+                    {item.name}
+                  </p>
+                  <p className="text-[#4A5565] font-normal text-[16px]">
+                    {item.occup}
+                  </p>
+                  <p className="text-[#FF6900] font-normal text-[16px] text-center">
+                    {item.propertiesSold} properties<br></br>sold
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <button className="bg-[#FF6900] rounded-lg w-[140.3359375px] h-9 ">

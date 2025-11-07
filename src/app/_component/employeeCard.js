@@ -24,3 +24,5 @@ const Data = [
     propertiesSold: "28",
   },
 ];
+
+export default employees;
