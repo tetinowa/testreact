@@ -1,28 +1,24 @@
-const Data = [
-  {
-    image: "/img/employees/michael.jpg",
-    name: "Michael Chen",
-    occup: "Senior Real Estate Agent",
-    propertiesSold: "24",
-  },
-  {
-    image: "/img/employees/david.jpg",
-    name: "David Martinez",
-    occup: "Property Specialist",
-    propertiesSold: "18",
-  },
-  {
-    image: "/img/employees/james.jpg",
-    name: "James Wilson",
-    occup: "Investment Advisor",
-    propertiesSold: "32",
-  },
-  {
-    image: "/img/employees/robert.jpg",
-    name: "Robert Thompson",
-    occup: "Luxury Home Expert",
-    propertiesSold: "28",
-  },
-];
+import Image from "next/image";
 
-export default employees;
+export default function EmployeeCard({ image, name, occup, propertiesSold }) {
+  return (
+    <div className="w-[302px] relative h-[390px] rounded-[14px] border flex flex-col items-center justify-center gap-6 bg-white overflow-hidden">
+      <div className="w-[300px] relative h-64">
+        <Image
+          src={image}
+          sizes="w-[300px] h-64"
+          alt={name || "Employee photo"}
+          fill
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="w-[246.26px] h-[108px] flex flex-col justify-center items-center gap-1 p-4">
+        <p className="text-black font-normal text-[16px]">{name}</p>
+        <p className="text-[#4A5565] font-normal text-[16px]">{occup}</p>
+        <p className="text-[#FF6900] font-normal text-[16px] text-center">
+          {propertiesSold} properties<br />sold
+        </p>
+      </div>
+    </div>
+  );
+}
